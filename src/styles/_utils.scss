@@ -1,0 +1,53 @@
+.flex {
+  display: flex;
+
+  @for $i from 1 through 10 {
+    &-#{$i} {
+      flex: #{$i};
+    }
+  }
+}
+
+.mgh{
+  &-1{
+    margin: 1.2rem 0;
+  }
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
+}
+
+.divider {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  color: $color-light-gray;
+
+  &:before,
+  &:after {
+    position: absolute;
+    width: 45%;
+    content: " ";
+    display: block;
+    height: 0.05rem;
+    background-color: $color-light-gray;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+}

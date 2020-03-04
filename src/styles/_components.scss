@@ -1,0 +1,119 @@
+.btn {
+  font-family: "Nunito", sans-serif;
+  border-radius: 3rem;
+  padding: 1.4rem 2.4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 1.2rem 0;
+  &--block {
+    width: 100%;
+  }
+
+  &--dark {
+    background-color: $color-gray;
+    color: $text-color-white;
+    &:hover {
+      background-color: darken($color-gray, 10%);
+    }
+  }
+
+  &--facebook {
+    background-color: $color-facebook;
+    color: $text-color-white;
+    &:hover {
+      background-color: darken($color-facebook, 10%);
+    }
+  }
+
+  &--google {
+    background-color: $color-google;
+    color: $text-color-white;
+    &:hover {
+      background-color: darken($color-google, 10%);
+    }
+  }
+}
+
+.form-field {
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    margin: 1.2rem 0;
+    padding: 1.4rem 2rem;
+    border: 0.1rem solid $color-light-gray;
+    outline: none;
+    box-shadow: 0 0 10px rgba(black, 0.015);
+    border-radius: 3rem;
+    box-sizing: border-box;
+    &::placeholder {
+      color: $color-light-gray;
+    }
+  }
+  input[type="checkbox"] {
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    visibility: visible;
+    position: relative;
+    margin-right: 1rem;
+    &:before {
+      position: absolute;
+      content: " ";
+      width: 2rem;
+      height: 2rem;
+      background: #fff;
+      border-radius: 3px;
+      border: 1px solid $color-light-gray;
+      display: block;
+      top: 0;
+      left: 0;
+      visibility: visible;
+    }
+    &:after {
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      top: 0.25rem;
+      left: 0.25rem;
+      font-family: "LineIcons";
+      font-size: 1.6rem;
+      content: "\ea55";
+      display: none;
+      color: $color-light-gray;
+    }
+    &:checked:after {
+      display: block;
+    }
+  }
+
+  &--icon {
+    position: relative;
+    &:before {
+      position: absolute;
+      font-family: "LineIcons";
+      top: 50%;
+      left: 2.4rem;
+      transform: translateY(-50%);
+      color: $color-light-gray;
+    }
+    input[type="text"],input[type="password"] {
+      padding-left: 5rem;
+    }
+  }
+
+  &--email {
+    &:before {
+      content: "\eaab";
+    }
+  }
+
+  &--password {
+    &:before {
+      content: "\eb17";
+    }
+  }
+}

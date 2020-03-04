@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: $primary-color;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $link-color;
+  }
+
+  &:hover {
+    color: darken($link-color, 10%);
+  }
+}
