@@ -10,27 +10,11 @@
   background-color: #fefefe;
   display: flex;
   border-radius: 1.2rem;
-  box-shadow: 0 0 30px rgba(black,0.015);
-  &__form {
-    flex: 1;
-    padding: 5% 12.5%;
-  }
+  box-shadow: 0 0 3rem rgba(black, 0.015);
 
-  &__photo {
-    width: 35%;
+  &__background {
     background-image: url(../assets/login-box-background.jpg);
     background-size: cover;
     background-position: center center;
-    border-top-right-radius: 1.2rem;
-    border-bottom-right-radius: 1.2rem;
-  }
-
-  &__title{
-    &--main{
-
-    }
-    &--sub{
-      color: $color-gray;
-    }
   }
 }

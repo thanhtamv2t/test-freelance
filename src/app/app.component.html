@@ -1,35 +1,54 @@
 <div class="container">
-  <div class="login-box">
-    <div class="login-box__form">
-      <h1 class="login-box__title--main">Welcome Back</h1>
-      <h3 class="login-box__title--sub">New user? <a href="#">Create an account</a></h3>
+  <div class="login-box w-60">
+    <div class="fl w-70-l w-100-m pv5 ph6">
+      <h1 class="f1 pa1">Welcome Back</h1>
+      <h3 class="f2 pa1">New user? <a href="#">Create an account</a></h3>
       <form action="#">
-        <div class="form-field form-field--icon form-field--email">
-          <input type="text" placeholder="Email Address"/>
+        <div class="form-field form-field--icon form-field--email mv4">
+          <input
+            type="text"
+            placeholder="Email Address"
+            class="w-100 pv4 pl5 pr3 br-pill ba b--black-10"
+          />
         </div>
-        <div class="form-field form-field--icon form-field--password">
-          <input type="password" placeholder="Password"/>
+        <div class="form-field form-field--icon form-field--password mv4">
+          <input
+            type="password"
+            placeholder="Password"
+            class="w-100 pv4 pl5 pr3 br-pill ba b--black-10"
+          />
         </div>
-        <div class="form-field flex mgh-1">
-          <div class="flex-1">
+        <div class="form-field mv4 ph3">
+          <div class="fl w-50 tl">
             <label>
               <input type="checkbox" />
               Remember Me
             </label>
           </div>
-          <div class="flex-1 text-right">
+          <div class="fl w-50 tr">
             <a href="#">Forgot password?</a>
           </div>
         </div>
         <div class="form-field">
-          <button class="btn btn--block btn--dark">Login</button>
+          <button
+            class="tc w-100 pv4 mv4 br-pill ba b--white bg-black-30 white"
+          >
+            Login
+          </button>
           <div class="divider">OR</div>
-          <button class="btn btn--block btn--facebook">Login with Facebook</button>
-          <button class="btn btn--block btn--google">Login with Google</button>
+          <button
+            class="tc w-100 pv4 mv4 br-pill ba b--white bg-dark-blue white"
+          >
+            Login with Facebook
+          </button>
+          <button
+            class="tc w-100 pv4 br-pill ba b--white bg-dark-red white bold"
+          >
+            Login with Google
+          </button>
         </div>
       </form>
     </div>
-    <div class="login-box__photo">
-    </div>
+    <div class="fl w-30-l dn-m login-box__background"></div>
   </div>
 </div>
